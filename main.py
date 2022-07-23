@@ -15,7 +15,7 @@ def del_audio(id):
 
     headers = {
         "Accept": "application/json",
-        "Authorization": "Bearer write_dc74ae8b9ac2a12ec9d60ba1194b0f80"
+        "Authorization": ""
     }
 
     response = requests.delete(url, headers=headers, verify=False)
@@ -38,7 +38,7 @@ payload = {
 headers = {
     "Accept": "application/json",
     "Content-Type": "application/json",
-    "Authorization": "Bearer write_dc74ae8b9ac2a12ec9d60ba1194b0f80"
+    "Authorization": ""
 }
 
 response = requests.post(url, json=payload, headers=headers, verify=False)
@@ -47,7 +47,7 @@ print(response.text)
 
 #List audio
 
-headers = {"Accept": "application/json","Authorization": "Bearer write_dc74ae8b9ac2a12ec9d60ba1194b0f80"}
+headers = {"Accept": "application/json","Authorization": ""}
 
 response = requests.get(url, headers=headers, verify=False)
 
